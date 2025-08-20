@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: a tiny reset that plays well with Tailwind */
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-black text-zinc-100 antialiased;
+  }
+}
+
+/* Utility helpers used by your App */
+@layer utilities {
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 8s ease infinite;
+  }
+}
